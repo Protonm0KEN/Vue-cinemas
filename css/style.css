@@ -54,7 +54,11 @@ body {
     }
 
 }
-
+.header{
+    position: sticky;
+    z-index: 10;
+    top: -90px;
+}
 .header__poster-icon {
     font-size: 50px;
     color: var(--white);
