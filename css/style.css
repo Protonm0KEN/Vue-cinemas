@@ -390,7 +390,9 @@ body {
 }
 .collections__item-img{
     display: block;
+    border-radius: 6px;
     width: 100%;
+    transition: 1.2s;
 }
 .collections__item-title{
     color: var(--white);
@@ -406,6 +408,9 @@ body {
     transform: translateY(100%);
 }
 .collection__item:hover .main__icon{
-    transform: scale(1.4) rotateX(180deg);
+    transform: scale(1.5) rotateX(360deg);
+}
+.collection__item:hover .collections__item-img{
+    transform: scale(1.2);
 }
 /* Main End */
