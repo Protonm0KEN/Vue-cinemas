@@ -263,6 +263,7 @@ body {
     cursor: pointer;
     color: var(--white);
     font-size: 40px;
+    transition: 1.5s;
 }
 
 .main__films-item {
@@ -350,6 +351,7 @@ body {
     position: relative;
     max-width: 350px;
     width: 100%;
+    overflow: hidden;
 }
 
 .collections__item-info {
@@ -373,6 +375,18 @@ body {
     position: absolute;
     left: 7px;
     top: 7px;
+    transition: 0.5s;
+}
+.collections__item-info::after{
+    content: '';
+    display: block;
+    background: url(../img/rectangles.svg) no-repeat;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    transition: 0.5s;
 }
 .collections__item-img{
     display: block;
@@ -384,5 +398,14 @@ body {
     line-height: 22px;
     font-family: var(--CB);
     margin-top: 15px;
+}
+.collection__item:hover .collections__item-info::before{
+    transform: translateY(-100%);
+}
+.collection__item:hover .collections__item-info::after{
+    transform: translateY(100%);
+}
+.collection__item:hover .main__icon{
+    transform: scale(1.4) rotateX(180deg);
 }
 /* Main End */
