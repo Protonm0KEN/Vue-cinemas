@@ -413,4 +413,7 @@ body {
 .collection__item:hover .collections__item-img{
     transform: scale(1.2);
 }
+.collection__item{
+    cursor: pointer;
+}
 /* Main End */
