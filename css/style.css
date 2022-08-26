@@ -367,9 +367,9 @@ body {
 .collections__item-info::before{
     content: '';
     display: block;
-    background: url(../img/rectangles.svg);
+    background: url(../img/rectangles.svg) no-repeat;
     width: 20px;
-    height: 100px;
+    height: 100%;
     position: absolute;
     left: 7px;
     top: 7px;
